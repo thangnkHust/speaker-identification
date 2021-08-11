@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+    app:
+        image: speaker-ident:1.0
+        container_name: speaker-ident
+        ports:
+            - "5000:5000"
+        # restart: always
+        volumes:
+            - ./:/app
+        environment:
+            FLASK_DEBUG: 1
