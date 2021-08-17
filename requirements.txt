@@ -4,3 +4,6 @@ scipy
 pandas
 keras==2.4.3
 librosa
+flask_sqlalchemy
+flask_restful==0.3.8
+flask_cors

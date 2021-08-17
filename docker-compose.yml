@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
     app:
-        image: speaker-ident:1.0
+        image: speaker-ident:v1
         container_name: speaker-ident
         ports:
             - "5000:5000"

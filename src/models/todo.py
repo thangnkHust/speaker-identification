@@ -1,6 +1,7 @@
-from my_app import db
+from . import db
 
 class Todo(db.Model):
+    __tablename__ = "todo"
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(255))
     complete = db.Column(db.Boolean)
