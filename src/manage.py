@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 from .config import config_by_name
 from .models import db
 
-from .controllers import Hello, TodoList, Todo
+from .controllers import Hello, TodoList, Todo, SpeakerRegisterList
 
 def create_app(flask_env = 'dev'):
     app = Flask(__name__)
@@ -22,5 +22,6 @@ def create_app(flask_env = 'dev'):
     api.add_resource(Hello, '/')
     api.add_resource(TodoList, '/todo/')
     api.add_resource(Todo, '/todo/<id>')
+    api.add_resource(SpeakerRegisterList, '/speaker/register')
 
     return app

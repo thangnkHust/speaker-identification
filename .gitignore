@@ -105,4 +105,4 @@ res/
 .DS_Store
 
 src/dev.sqlite.db
-src/data
+data/
